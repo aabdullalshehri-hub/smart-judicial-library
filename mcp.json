@@ -1,0 +1,16 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "saudi_judicial_portal": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "${PLUGIN_ROOT}/src/stdio.mjs"
+      ],
+      "cwd": "${PLUGIN_ROOT}",
+      "env": {
+        "PORTAL_ACCESS_ENABLED": "true"
+      }
+    }
+  }
+}
